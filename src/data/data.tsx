@@ -13,7 +13,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/dark-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,7 +25,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -69,24 +69,18 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Shivram Krishnamurthy`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I'm a Bay Area based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently Pursuing My Master's Degree in Computer Science
+        at <strong className="text-stone-100">Santa Clara University</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://drive.google.com/file/d/1tCxd44thoEshiA5wRT28STZ6phjUm1TX/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -104,16 +98,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm a computer science graduate student passionate about software development.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Santa Clara, CA', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'ML/AI, Distributed Systems', Icon: SparklesIcon},
+    {label: 'Study', text: 'Santa Clara University', Icon: AcademicCapIcon},
   ],
 };
 
@@ -122,19 +113,23 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Domain Knowledge',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'Backend Development',
+        level: 8,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Object Oriented Design',
+        level: 9,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Algorithm Design',
+        level: 9,
+      },
+      {
+        name: 'Database Design',
+        level: 7,
       },
     ],
   },
@@ -146,46 +141,71 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'HTML',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'CSS',
+        level: 7,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Programming Languages',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
+        name: 'Java',
+        level: 10,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Python',
+        level: 4,
       },
       {
-        name: 'Golang',
+        name: 'C++',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Tools & Technologies',
     skills: [
       {
-        name: 'React Native',
+        name: 'Spring Framework',
         level: 9,
       },
       {
-        name: 'Flutter',
+        name: 'Flask',
+        level: 5,
+      },
+      {
+        name: 'Elasticsearch',
         level: 4,
       },
       {
-        name: 'Swift',
+        name: 'Apache Kafka',
         level: 3,
+      },
+      {
+        name: 'AWS',
+        level: 3,
+      },
+    ],
+  },
+  {
+    name: 'Databases',
+    skills: [
+      {
+        name: 'Oracle SQL',
+        level: 9,
+      },
+      {
+        name: 'MySql',
+        level: 9,
+      },
+      {
+        name: 'MongoDB',
+        level: 7,
       },
     ],
   },
@@ -268,39 +288,62 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2023',
+    location: 'Santa Clara University',
+    title: 'Master of Science in Computer Science',
+    content: <p>Coursework in Advanced Operating Systems, Design and Analysis of Algorithms, Adv Database Systems, Machine
+    Learning, Design Patterns.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'May 2017',
+    location: 'Amrita Vishwa Vidyapeetham',
+    title: 'Bachelor of Technology in Computer Science',
+    content: <p>Coursework in Data Structure & Algorithms, Object Oriented Analysis & Design, Web Programming</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'June 2022 - December 2022',
+    location: 'e2open',
+    title: 'Software Engineer Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Part of the Research & Development engineering team working on core Supply Chain Management Product
+        <br/>
+        Modified a search functionality for transport orders by leveraging Elasticsearch improving retrieval speed by 44%
+        <br/>
+        Designed and implemented a fix for a concurrency issue using synchronizations locks in Java resolving data inconsistency in microservice
+        <br/>
+        Added multiple filters and paginated a REST API endpoint to list the Transport Orders utilizing Spring Framework speeding up Supply Chain Process by 30%
+        <br/>
+        Increased data fetching performance of REST API by 47% by deploying Redis cache for storing frequently received queries
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'January 2020 - August 2021',
+    location: 'Apisero Inc.',
+    title: 'Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Built REST APIs using Spring Boot for servicing orders between 4+ companies and its partners for automating purchasing process
+        <br/>
+        Optimized the performance of a compute expensive service by caching responses using Memcached for redundant requests by 40%
+        <br/>
+        Coordinated with product and sales team to develop a KPI analytics dashboard using Splunk for APIs exposed to the clients
+      </p>
+    ),
+  },
+  {
+    date: 'July 2017 - August 2019',
+    location: 'Ernst & Young',
+    title: 'Software Engineer',
+    content: (
+      <p>
+        Led efforts to build an in-house companywide communication tool broadcasting product update to all teams through Slack, email, and LinkedIn
+        <br/>
+        Created automation scripts to automate regression testing of applications which reduced testing efforts by 10hrs a week
       </p>
     ),
   },
@@ -313,19 +356,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Muthukumaran Elango',
+      text: 'Shivram is a passionate coder, hardworking teammate, humble person, and a dedicated individual. He never gives up, even when faced with challenges. His exceptional qualities and work ethic make him an invaluable asset to any team. I highly recommend him to anyone seeking a dedicated and inspiring team player.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Dhanush Thirunavukkarasu',
+      text: 'I managed Shivram in EY for 2 years. He is a very hardworking and dedicated person. He is a very good team player and always ready to help others. He is a very good coder and always ready to learn new technologies. He is a very good person and always ready to help others. I highly recommend him to anyone seeking a dedicated and inspiring team player.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
 };
@@ -340,23 +378,18 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'skrishnamurthy2@scu.edu',
+      href: 'mailto:skrishnamurthy2@scu.edu',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
+      text: 'Santa Clara, California',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Shivram49',
+      href: 'https://github.com/Shivram49',
     },
   ],
 };
@@ -365,9 +398,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Shivram49'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/shivramkrishnamurthy/'},
 ];
