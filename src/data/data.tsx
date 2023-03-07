@@ -10,11 +10,11 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/dark-background.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.png';
+import porfolioImage2 from '../images/portfolio/portfolio-2.png';
+import porfolioImage3 from '../images/portfolio/portfolio-3.png';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import profilepic from '../images/profilepic.png';
@@ -208,47 +208,35 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Gene Pathogen Correlation',
+    description: 'A machine learning research project to predict a disease of a given a genome of a person.',
+    url: 'https://github.com/Shivram49/Gene-Pathogen-Correlation',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Yelp Clone',
+    description: 'Created a clone of Yelp using Java Swing, Java, and Oracle SQL.',
+    url: 'https://github.com/Shivram49/Project-Yelp-Dataset-master',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Buffer Replacement Algorithms for Relationship Database Systems',
+    description: 'Research project to compare the performance of different buffer replacement algorithms for a relational database system.',
+    url: 'https://github.com/Shivram49/workingpagereplacement',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Secure Banking System',
+    description: 'A secure banking system that allows users to create accounts, deposit and withdraw money, and transfer money to other users.',
+    url: 'https://github.com/Shivram49/EncryptedBankAccount',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Twitter Disaster Detection',
+    description: 'A machine learning approach to sorting tweets from twitter to identify the disaster and severity of a disaster highlight them in a map',
+    url: 'https://github.com/Shivram49/DisasterManagementDashboard',
     image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
+  }
 ];
 
 /**
