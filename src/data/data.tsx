@@ -90,7 +90,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a computer science graduate student passionate about software development.`,
+  description: `I'm a CS graduate student passionate about software development.`,
   aboutItems: [
     {label: 'Location', text: 'Santa Clara, CA', Icon: MapIcon},
     {label: 'Age', text: '27', Icon: CalendarIcon},
