@@ -15,7 +15,8 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
-// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import presentationImage1 from '../images/presentation1.png';
+import presentationImage2 from '../images/presentation2.png';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
@@ -236,6 +237,21 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A machine learning approach to sorting tweets from twitter to identify the disaster and severity of a disaster highlight them in a map',
     url: 'https://github.com/Shivram49/DisasterManagementDashboard',
     image: porfolioImage5,
+  }
+];
+
+export const presentationItems: PortfolioItem[] = [
+  {
+    title: 'Self Introduction',
+    description: 'Self introduction video',
+    url: 'https://www.youtube.com/watch?v=fcySpD9tAfU',
+    image: presentationImage1,
+  },
+  {
+    title: 'Herculia',
+    description: 'A video presentation on Herculia, a project to create a AI assisted virtual reality environment for physical training',
+    url: 'https://youtu.be/MuGVQO3iffQ',
+    image: presentationImage2,
   }
 ];
 
