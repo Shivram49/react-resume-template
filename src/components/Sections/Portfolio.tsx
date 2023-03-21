@@ -43,6 +43,7 @@ const Portfolio: FC = memo(() => {
                   <Image alt={title} layout="responsive" placeholder="blur" src={image} />
                   <ItemOverlay item={item} />
                 </div>
+                <br />
                 <h3 className="font-bold text-xl text-white">{title}</h3>
               </div>
             );
