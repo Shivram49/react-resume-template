@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 
 import {isMobile} from '../../config';
-import {portfolioItems, presentationItems,SectionId} from '../../data/data';
+import {portfolioItems,SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
@@ -26,25 +26,6 @@ const Portfolio: FC = memo(() => {
                   <Image alt={title} layout="responsive" placeholder="blur" src={image} />
                   <ItemOverlay item={item} />
                 </div>
-              </div>
-            );
-          })}
-        </div>
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my presentations</h2>
-        <div className=" w-full columns-1 md:columns-2 lg:columns-2">
-          {presentationItems.map((item, index) => {
-            const {title, image} = item;
-            return (
-              <div className="pb-6 text-center" key={`${title}-${index}`}>
-                <div
-                  className={classNames(
-                    'relative h-96 aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                  )}>
-                  <Image alt={title} layout="responsive" placeholder="blur" src={image} />
-                  <ItemOverlay item={item} />
-                </div>
-                <br />
-                <h3 className="font-bold text-xl text-white">{title}</h3>
               </div>
             );
           })}
