@@ -15,9 +15,9 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import presentationImage1 from '../images/presentation1.png';
 import presentationImage2 from '../images/presentation2.png';
-// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -237,7 +237,14 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A machine learning approach to sorting tweets from twitter to identify the disaster and severity of a disaster highlight them in a map',
     url: 'https://github.com/Shivram49/DisasterManagementDashboard',
     image: porfolioImage5,
+  },
+  {
+    title: 'Dashboard',
+    description: 'A dashboard to visualize the data, working on updates to make it more interactive',
+    url: 'http://ipl-env-1.eba-rcf7diq7.us-west-1.elasticbeanstalk.com/',
+    image: porfolioImage7,
   }
+
 ];
 
 export const presentationItems: PortfolioItem[] = [
